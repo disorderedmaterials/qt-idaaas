@@ -3,5 +3,5 @@
 qtModule {
   pname = "qtcharts";
   qtInputs = [ qtbase qtdeclarative ];
-  outputs = [ "out" "dev" "bin" ];
+  outputs = [ "out" "dev" ];
 }
