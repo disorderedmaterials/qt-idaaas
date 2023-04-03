@@ -46,7 +46,7 @@ in {
     src = fetchurl {
       url =
         "${mirror}/official_releases/qt/${minor}/${patch}/submodules/qtcharts-everywhere-src-${patch}.tar.xz";
-      sha256 = "";
+      sha256 = "oafA4IyIcM+X0cOi6z83aBqu0ApjtbL3C98tqHjQqao=";
       name = "qtcharts-everywhere-src-${patch}.tar.xz";
     };
   };
