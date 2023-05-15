@@ -253,7 +253,7 @@ in {
     src = fetchurl {
       url =
         "${mirror}/official_releases/qt/${minor}/${patch}/submodules/qttools-everywhere-src-${patch}.tar.xz";
-      sha256 = "";
+      sha256 = "oxOHkWGE5KXvUi0+qEHo6THMD4i+CCSno1SlctWCbGg=";
       name = "qttools-everywhere-src-${patch}.tar.xz";
     };
   };
