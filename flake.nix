@@ -9,7 +9,10 @@
         inherit (pkgs)
           newScope lib stdenv fetchurl fetchgit fetchpatch fetchFromGitHub
           makeSetupHook makeWrapper bison cups harfbuzz libGL perl ninja
-          writeText gtk3 dconf libglvnd darwin buildPackages;
+          VideoToolbox writeText gtk3 dconf libglvnd darwin buildPackages;
+        inherit (pkgs.gst_all_1)
+          gstreamer gst-plugins-base gst-plugins-good gst-libav gst-vaapi;
+
         cmake = pkgs.cmake.overrideAttrs (attrs: {
           patches = attrs.patches ++ [ ./nix/qt/patches/cmake.patch ];
         });

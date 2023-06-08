@@ -10,7 +10,7 @@ in {
     src = fetchurl {
       url =
         "${mirror}/official_releases/qt/${minor}/${patch}/submodules/qt3d-everywhere-src-${patch}.tar.xz";
-      sha256 = "";
+      sha256 = "RWwkw9OEAnPnILef6P7UUvqIm1TLrmtF2x0d7U2jc0E=";
       name = "qt3d-everywhere-src-${patch}.tar.xz";
     };
   };
@@ -127,7 +127,7 @@ in {
     src = fetchurl {
       url =
         "${mirror}/official_releases/qt/${minor}/${patch}/submodules/qtmultimedia-everywhere-src-${patch}.tar.xz";
-      sha256 = "";
+      sha256 = "fytw3urakRyOZg4oAShmV/KXpdHVQ9H2v6hW8olyx3Y=";
       name = "qtmultimedia-everywhere-src-${patch}.tar.xz";
     };
   };
@@ -253,7 +253,7 @@ in {
     src = fetchurl {
       url =
         "${mirror}/official_releases/qt/${minor}/${patch}/submodules/qttools-everywhere-src-${patch}.tar.xz";
-      sha256 = "";
+      sha256 = "oxOHkWGE5KXvUi0+qEHo6THMD4i+CCSno1SlctWCbGg=";
       name = "qttools-everywhere-src-${patch}.tar.xz";
     };
   };

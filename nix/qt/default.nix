@@ -20,10 +20,16 @@
 , libglvnd
 , darwin
 , buildPackages
+, gstreamer
+, gst-plugins-base
+, gst-plugins-good
+, gst-libav
+, gst-vaapi
 
   # options
 , developerBuild ? false
 , debug ? false
+, ...
 }:
 
 let
@@ -68,6 +74,9 @@ let
       qtcharts = callPackage ./modules/qtcharts.nix { };
       qtdatavis3d = callPackage ./modules/qtdatavis3d.nix { };
       qtdeclarative = callPackage ./modules/qtdeclarative.nix { };
+      qtmultimedia = callPackage ./modules/qtmultimedia.nix {
+        inherit VideoToolbox gstreamer gst-plugins-base gst-plugins-good gst-libav gst-vaapi;
+      };
       qtshadertools = callPackage ./modules/qtshadertools.nix { };
       qtquick3d = callPackage ./modules/qtquick3d.nix { };
       qtsvg = callPackage ./modules/qtsvg.nix { };
